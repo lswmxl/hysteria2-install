@@ -250,7 +250,7 @@ insthysteria(){
     fi
     ${PACKAGE_INSTALL[int]} curl wget sudo qrencode procps iptables-persistent netfilter-persistent
 
-    wget -N https://raw.githubusercontent.com/1keji/hysteria2-install/main/install_server.sh
+    wget -N https://raw.githubusercontent.com/lswmxl/hysteria2-install/refs/heads/master/install_server.sh
     bash install_server.sh
     rm -f install_server.sh
 
@@ -570,7 +570,7 @@ showconf(){
 }
 
 update_core(){
-    wget -N https://raw.githubusercontent.com/1keji/hysteria2-install/main/install_server.sh
+    wget -N https://raw.githubusercontent.com/lswmxl/hysteria2-install/refs/heads/master/install_server.sh
     bash install_server.sh
     
     rm -f install_server.sh
@@ -579,10 +579,8 @@ update_core(){
 menu() {
     clear
     echo "##############################################################"
-    echo -e "#                  ${RED}Hysteria 2 一键安装脚本${PLAIN}                   #"
-    echo -e "# ${GREEN}作者${PLAIN}: 1keji                                                #"
-    echo -e "# ${GREEN}博客${PLAIN}: https://1keji.net                                    #"
-    echo -e "# ${GREEN}GitHub 项目${PLAIN}: https://github.com/1keji/hysteria2-install    #"
+    echo -e "#           自用   ${RED}Hysteria 2 一键安装脚本${PLAIN}                   #"
+
     echo "##############################################################"
     echo ""
     echo -e " ${GREEN}1.${PLAIN} 安装 Hysteria 2"
